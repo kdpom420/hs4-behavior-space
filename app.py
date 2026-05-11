@@ -169,7 +169,8 @@ with tab3:
         title="Top HS Codes by Drift Length"
     )
     st.plotly_chart(fig3, use_container_width=True)
-        st.divider()
+    
+    st.divider()
 
     st.subheader("HS Goods with Large Behavioral Drift Over Time")
 
