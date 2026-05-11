@@ -1,6 +1,9 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import matplotlib.pyplot as plt
+from scipy.cluster.hierarchy import dendrogram, linkage
+from sklearn.preprocessing import StandardScaler
 
 st.set_page_config(
     page_title="HS4 Behavioral State Space",
@@ -62,7 +65,7 @@ with tab1:
     st.plotly_chart(fig, use_container_width=True)
 
 with tab2:
-    st.subheader("International Postal-Friendly Trade Goods")
+    st.subheader("International Postal-Friendly HS Candidates")
 
     top_n = st.slider("Top N", 5, 50, 20)
 
@@ -94,6 +97,55 @@ with tab2:
         title="Postal-Friendly HS Score"
     )
     st.plotly_chart(fig2, use_container_width=True)
+
+    st.divider()
+
+    st.subheader("Postal-Friendly Goods Similarity Tree")
+
+    feature_cols = [
+        "recent_growth",
+        "growth_persistence",
+        "country_diversity",
+        "volatility"
+    ]
+
+    top_n_tree = st.slider("Dendrogram Top N", 10, 40, 25)
+
+    tree_df = (
+        hs.sort_values("postal_hs_score", ascending=False)
+          .head(top_n_tree)
+          .copy()
+    )
+
+    tree_df = tree_df.dropna(subset=feature_cols)
+
+    if len(tree_df) < 2:
+        st.warning("Dendrogram requires at least two HS codes after removing missing values.")
+    else:
+        X = tree_df[feature_cols].values
+        X_scaled = StandardScaler().fit_transform(X)
+
+        labels = (
+            tree_df["cmdCode_clean"].astype(str)
+            + " "
+            + tree_df["hs_desc"].astype(str).str[:25]
+        )
+
+        Z = linkage(X_scaled, method="ward")
+
+        fig_tree, ax = plt.subplots(figsize=(10, max(5, len(tree_df) * 0.35)))
+        dendrogram(
+            Z,
+            labels=labels.tolist(),
+            orientation="right",
+            leaf_font_size=9,
+            ax=ax
+        )
+        ax.set_title("Similarity Tree of Postal-Friendly Trade Goods")
+        ax.set_xlabel("Feature Distance")
+        fig_tree.tight_layout()
+        st.pyplot(fig_tree)
+        plt.close(fig_tree)
 
 with tab3:
     st.subheader("HS Topology Drift")
