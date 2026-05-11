@@ -1,0 +1,68 @@
+﻿cmdCode,drift_length,cmdCode_clean,hs_desc
+1901,0.7822134,1901,Malt extract and food preparations of flour/starch/milk
+1902,6.12754,1902,"Pasta, whether or not cooked or stuffed"
+1904,1.8424642,1904,Prepared foods obtained by swelling or roasting cereals
+1905,1.1256268,1905,"Bread, pastry, cakes, biscuits and other bakers' wares"
+2101,0.93026936,2101,"Coffee, tea or mate extracts and concentrates"
+2103,0.88621265,2103,"Sauces, mixed condiments and seasonings"
+2104,0.89612013,2104,"Soups, broths and preparations therefor"
+2106,1.1247841,2106,Food preparations not elsewhere specified
+3004,1.7694637,3004,Medicaments in measured doses or retail sale
+3005,1.7064216,3005,"Wadding, gauze, bandages and similar medical articles"
+3006,1.0992638,3006,Pharmaceutical goods
+3303,16.578873,3303,Perfumes and toilet waters
+3304,1.0792965,3304,"Beauty, make-up and skin-care preparations"
+3305,1.5205956,3305,Hair preparations
+3306,1.2460399,3306,Oral or dental hygiene preparations
+3307,1.0314298,3307,"Shaving, deodorant, bath and perfumery preparations"
+3923,1.0829893,3923,Plastic packing and conveyance articles
+3924,0.9803973,3924,"Plastic tableware, kitchenware and household articles"
+3926,0.6886756,3926,Other articles of plastics
+4901,0.86258125,4901,"Printed books, brochures and similar printed matter"
+4902,30.19074,4902,"Newspapers, journals and periodicals"
+4903,2.750718,4903,"Children's picture, drawing or colouring books"
+4909,13.647297,4909,Printed postcards and greeting cards
+4911,3.2217782,4911,Other printed matter
+6101,12.710381,6101,"Men's or boys' overcoats, knitted or crocheted"
+6102,11.280474,6102,"Women's or girls' overcoats, knitted or crocheted"
+6103,4.226198,6103,"Men's or boys' suits and ensembles, knitted or crocheted"
+6104,5.3232713,6104,"Women's or girls' suits and ensembles, knitted or crocheted"
+6105,7.2298875,6105,"Men's or boys' shirts, knitted or crocheted"
+6106,4.4165125,6106,"Women's or girls' blouses and shirts, knitted or crocheted"
+6107,7.695493,6107,"Men's or boys' underpants, nightshirts and similar articles"
+6108,5.0263395,6108,"Women's or girls' slips, panties, nightdresses and similar articles"
+6109,5.0263853,6109,"T-shirts, singlets and other vests, knitted or crocheted"
+6110,3.8303754,6110,"Jerseys, pullovers, cardigans and similar articles"
+6111,4.7595673,6111,"Babies' garments and clothing accessories, knitted or crocheted"
+6112,7.14609,6112,"Track suits, ski suits and swimwear, knitted or crocheted"
+6113,4.570122,6113,Garments made up of knitted or crocheted fabrics
+6114,15.741111,6114,"Other garments, knitted or crocheted"
+6115,2.4479668,6115,"Pantyhose, socks and other hosiery"
+6116,1.5603124,6116,"Gloves, mittens and mitts, knitted or crocheted"
+6117,4.744937,6117,"Other made up clothing accessories, knitted or crocheted"
+6201,3.6750998,6201,Men's or boys' overcoats and similar coats
+6202,11.598403,6202,Women's or girls' overcoats and similar coats
+6203,5.508464,6203,"Men's or boys' suits, ensembles and trousers"
+6204,3.8267322,6204,"Women's or girls' suits, ensembles, dresses and skirts"
+6205,8.669997,6205,Men's or boys' shirts
+6206,6.244061,6206,Women's or girls' blouses and shirts
+6207,3.6142707,6207,"Men's or boys' singlets, underpants and similar articles"
+6208,11.091309,6208,"Women's or girls' singlets, slips and similar articles"
+6209,12.695187,6209,Babies' garments and clothing accessories
+6210,13.91834,6210,Garments made up of felt or nonwovens
+6211,1.9613731,6211,"Track suits, ski suits, swimwear and other garments"
+6212,4.9974976,6212,"Brassieres, girdles, corsets and similar articles"
+6213,1.9168732,6213,Handkerchiefs
+6214,2.8863888,6214,"Shawls, scarves, mufflers and similar articles"
+6215,2.6865513,6215,"Ties, bow ties and cravats"
+6216,6.485973,6216,"Gloves, mittens and mitts"
+6217,0.7827878,6217,Other made up clothing accessories
+8517,0.91429245,8517,Telephone sets and communication apparatus
+8523,1.4501526,8523,Storage media and recording media
+8525,3.1176367,8525,Transmission apparatus for radio or television
+8526,1.5425692,8526,Radar and radio navigational apparatus
+8527,1.275197,8527,Radio-broadcast receivers
+8528,1.5521575,8528,"Monitors, projectors and television receivers"
+8536,0.61660284,8536,Electrical switching or circuit protection apparatus
+8543,0.7839717,8543,Electrical machines and apparatus with individual functions
+8544,1.1605822,8544,"Insulated wire, cable and conductors"
