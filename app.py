@@ -65,7 +65,7 @@ with tab1:
     st.plotly_chart(fig, use_container_width=True)
 
 with tab2:
-    st.subheader("International Postal-Friendly HS Candidates")
+    st.subheader("International Postal-Friendly HS Code Candidates")
 
     top_n = st.slider("Top N", 5, 50, 20)
 
@@ -142,7 +142,10 @@ with tab2:
             ax=ax
         )
         ax.set_title("Similarity Tree of Postal-Friendly Trade Goods")
-        ax.set_xlabel("Feature Distance")
+        ax.set_xlabel("Behavioral Feature Distance")
+        st.caption(
+            "Hierarchical clustering of HS goods using behavioral trade features."
+        )
         fig_tree.tight_layout()
         st.pyplot(fig_tree)
         plt.close(fig_tree)
