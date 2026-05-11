@@ -65,7 +65,7 @@ with tab1:
     st.plotly_chart(fig, use_container_width=True)
 
 with tab2:
-    st.subheader("International Postal-Friendly HS Code (Harmonized System Code) Candidates")
+    st.subheader("International Postal-Friendly Goods (Harmonized System Code) ")
 
     top_n = st.slider("Top N", 5, 50, 20)
 
