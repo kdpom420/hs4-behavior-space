@@ -169,6 +169,37 @@ with tab3:
         title="Top HS Codes by Drift Length"
     )
     st.plotly_chart(fig3, use_container_width=True)
+        st.divider()
+
+    st.subheader("HS Goods with Large Behavioral Drift Over Time")
+
+    top_drift_n = st.slider(
+        "Top Drift HS Codes",
+        5,
+        40,
+        20
+    )
+
+    top_movers = drift.sort_values(
+        "drift_length",
+        ascending=False
+    ).head(top_drift_n)
+
+    fig_drift = px.scatter(
+        top_movers,
+        x="drift_length",
+        y="cmdCode_clean",
+        size="drift_length",
+        color="drift_length",
+        hover_data=["hs_desc"],
+        title="HS Goods with Large Behavioral Drift"
+    )
+
+    st.plotly_chart(fig_drift, use_container_width=True)
+
+    st.caption(
+        "Larger drift length indicates stronger movement in behavioral state space over time."
+    )
 
     st.divider()
 
